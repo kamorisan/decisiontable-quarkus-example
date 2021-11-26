@@ -20,7 +20,7 @@ public class RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnit extends Rul
 
     /**
      * With the following expression ID:
-     * org.drools.modelcompiler.builder.generator.DRLIdGenerator@33fc9b46
+     * org.drools.modelcompiler.builder.generator.DRLIdGenerator@1af863c0
      */
     @Override
     public java.util.List<org.drools.model.Rule> getRules() {
@@ -31,7 +31,8 @@ public class RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnit extends Rul
         return java.util.Arrays.asList(RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnitRuleMethods0.rule_Bread_32Discount__13(),
                                        RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnitRuleMethods0.rule_Bread_32Discount__14(),
                                        RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnitRuleMethods0.rule_Bread_32Discount__15(),
-                                       RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnitRuleMethods0.rule_Bread_32Discount__16());
+                                       RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnitRuleMethods0.rule_Bread_32Discount__16(),
+                                       RulesF894883E1030542FEFCE9860F835B9B7_BreadDiscountUnitRuleMethods0.rule_Bread_32Discount__17());
     }
 
     java.util.List<org.drools.model.Rule> rules = getRulesList();

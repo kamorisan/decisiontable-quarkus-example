@@ -21,7 +21,7 @@ package org.kie.kogito.app;
 public class DecisionModels extends org.kie.kogito.dmn.AbstractDecisionModels {
 
     static {
-        init(org.kie.kogito.pmml.AbstractPredictionModels.kieRuntimeFactoryFunction, null, null, readResource(Application.class.getResourceAsStream("/TrafficViolation.dmn")));
+        init(org.kie.kogito.pmml.AbstractPredictionModels.kieRuntimeFactoryFunction, null, null, readResource(org.drools.core.util.IoUtils.class.getClassLoader().getResourceAsStream("TrafficViolation.dmn")));
     }
 
     @javax.inject.Inject
