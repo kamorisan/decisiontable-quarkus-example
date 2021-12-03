@@ -3,7 +3,14 @@ kind: KogitoBuild  # Application type
 metadata:
   name: decisiontable-quarkus-example  # Application name
 spec:
-  type: Binary
+  type: RemoteSource
+  gitSource:
+    uri: 'https://github.com/kamorisan/decisiontable-quarkus-example'  # Git repository containing application (uses default branch)
+    #contextDir: decisiontable-quarkus-example  # Git folder location of application
+  mavenMirrorURL: >-
+    http://nexusrepo-sonatype-nexus-service-build-test.apps.rosa-7f31.a2st.p1.openshiftapps.com/repository/maven-public/
+  enableMavenDownloadOutput: true
+  disableIncremental: true
 ---
 apiVersion: app.kiegroup.org/v1beta1
 kind: KogitoRuntime  # Application type

@@ -2,7 +2,7 @@ Openshift Console: https://console-openshift-console.apps.cluster-463a.463a.sand
 Openshift API for command line 'oc' client: https://api.cluster-463a.463a.sandbox1785.opentlc.com:6443
 
 ## OpenShift Login
-export MASTER_URL=https://api.cluster-463a.463a.sandbox1785.opentlc.com:6443
+export MASTER_URL=https://api.cluster-g5zsb.g5zsb.sandbox1859.opentlc.com:6443
 oc login ${MASTER_URL} -u opentlc-mgr -p r3dh4t1! --insecure-skip-tls-verify=true
 
 ## プロジェクトの作成
@@ -19,6 +19,7 @@ mvn clean compile package -DskipTests
 
 ## yamlからのインストール
 oc apply -f operator/kogito-deploy.yaml -n ${PJ_NAME}
+Gitのリポジトリへのパスを自分のものに変えておくこと。
 
 ## Binary のアップロード
 ### oc start-build <Application name> --from-dir=target/ -n <namespace>
@@ -28,4 +29,4 @@ oc start-build decisiontable-quarkus-example --from-dir=target/ -n ${PJ_NAME}
 ## Swagger-UI
 http://decisiontable-quarkus-example-dm-kogito.apps.cluster-463a.463a.sandbox1785.opentlc.com/q/swagger-ui/
 
-
+oc start-build decisiontable-quarkus-example --from-dir=target/ -n ${PJ_NAME}

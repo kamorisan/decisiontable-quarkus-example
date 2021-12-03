@@ -1,0 +1,11 @@
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoBuild  # Application type
+metadata:
+  name: decisiontable-quarkus-example  # Application name
+spec:
+  type: Binary
+---
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoRuntime  # Application type
+metadata:
+  name: decisiontable-quarkus-example  # Application name
